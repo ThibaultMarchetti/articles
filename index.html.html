@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Nom - Articles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Votre Nom</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Bienvenue sur mon portfolio</h2>
+            <p>Je suis [Votre Profession] passionné par [Votre Domaine]. Explorez mes articles ci-dessous.</p>
+        </div>
+    </section>
+
+    <section id="articles">
+        <div class="container">
+            <h2>Mes Articles</h2>
+            <div class="articles-list">
+                <article>
+                    <h3>Titre de l'Article 1</h3>
+                    <p>Un bref résumé de l'article...</p>
+                    <a href="#">Lire la suite</a>
+                </article>
+                <article>
+                    <h3>Titre de l'Article 2</h3>
+                    <p>Un bref résumé de l'article...</p>
+                    <a href="#">Lire la suite</a>
+                </article>
+                <!-- Ajoutez plus d'articles ici -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>[Votre bio professionnelle]</p>
+            <a href="CV.pdf" class="btn">Télécharger mon CV</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <form>
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Votre Nom. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
