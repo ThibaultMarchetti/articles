@@ -1,124 +1,175 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff8f0;
+    color: #606042;
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: auto;
     overflow: hidden;
 }
 
 header {
-    background: #333;
+    background: #828261;
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #77aaff 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    float: right;
-    display: inline;
-    padding: 0 20px 0 20px;
+    border-bottom: #c2c29d 3px solid;
 }
 
 header h1 {
     float: left;
+    font-family: 'Bugaki', sans-serif;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 10px;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #ffe5d2;
 }
 
 section {
-    padding: 20px 0;
+    padding: 60px 0;
     background: #fff;
     margin: 20px 0;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-family: 'Bugaki', sans-serif;
+    font-size: 2rem;
+    color: #606042;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center;
+    color: #828261;
+    margin-bottom: 40px;
 }
 
 .articles-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .articles-list article {
-    flex: 1;
-    background: #e4e4e4;
+    flex-basis: 45%;
+    background: #f4f4f4;
     margin: 10px;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .articles-list article h3 {
+    font-family: 'Bugaki', sans-serif;
+    color: #606042;
     margin-top: 0;
 }
 
+.articles-list article p {
+    color: #828261;
+}
+
 footer {
-    background: #333;
+    background: #828261;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 20px;
+    border-top: #c2c29d 3px solid;
 }
 
 footer p {
     margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 form {
-    background: #e4e4e4;
+    background: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
+    color: #606042;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #c2c29d;
+    border-radius: 5px;
 }
 
 form button {
-    background: #333;
+    background: #606042;
     color: #fff;
     padding: 10px;
-    border: 0;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 form button:hover {
-    background: #555;
+    background: #828261;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #333;
+    background: #606042;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    transition: background 0.3s;
 }
 
 .btn:hover {
-    background: #555;
+    background: #828261;
+}
+/* Animation de l'apparition progressive */
+section, .articles-list article {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.show, .articles-list article.show {
+    opacity: 1;
+    transform: translateY(0);
 }
