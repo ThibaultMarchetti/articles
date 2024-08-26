@@ -74,6 +74,12 @@ section p {
     margin-bottom: 40px;
 }
 
+/* Justification du texte pour la section "À propos" */
+#about p {
+    text-align: justify;
+    text-align-last: left; /* Pour aligner la dernière ligne à droite, si besoin */
+}
+
 .articles-list {
     display: flex;
     flex-wrap: wrap;
@@ -162,6 +168,7 @@ form button:hover {
 .btn:hover {
     background: #828261;
 }
+
 /* Animation de l'apparition progressive */
 section, .articles-list article {
     opacity: 0;
@@ -172,4 +179,61 @@ section, .articles-list article {
 section.show, .articles-list article.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Styles pour la nouvelle section "Les articles qui m'ont inspirés" */
+.inspired-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.inspired-list article {
+    flex-basis: 45%;
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;  /* Centrer le texte et les images */
+}
+
+.inspired-list article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.inspired-list article h3 {
+    font-family: 'Bugaki', sans-serif;
+    color: #606042;
+    margin-top: 0;
+}
+
+.inspired-list article p {
+    color: #828261;
+}
+
+.linkedin-button-container {
+    text-align: center; /* Centre le bouton dans le conteneur */
+    margin-top: 20px;   /* Espace au-dessus du bouton */
+}
+
+.btn-linkedin {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b5; /* Couleur LinkedIn */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-linkedin:hover {
+    background-color: #005582; /* Couleur plus foncée au survol */
 }

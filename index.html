@@ -10,11 +10,12 @@
 <body>
     <header>
         <div class="container">
-            <h1> Marchetti Thibault</h1>
+            <h1>Marchetti Thibault</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Accueil</a></li>
                     <li><a href="#articles">Articles</a></li>
+                    <li><a href="#inspired">Les articles qui m'ont inspirés</a></li> <!-- Nouveau lien ajouté -->
                     <li><a href="#about">À propos</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -25,7 +26,7 @@
     <section id="home">
         <div class="container">
             <h2>Bienvenue sur mon portfolio</h2>
-            <p>Actuellement étudiant à l'IEP de fontainebleau, je suis passionné par le cinéma et les sciences politique. Je partage ici différent articles reflétant mes réflexions sur plusieurs sujets d'actualités. Explorez mes articles ci-dessous.</p>
+            <p>Actuellement étudiant à l'IEP de fontainebleau, je suis passionné par le cinéma et les sciences politiques. Je partage ici différents articles reflétant mes réflexions sur plusieurs sujets d'actualités. Explorez mes articles ci-dessous.</p>
         </div>
     </section>
 
@@ -34,14 +35,37 @@
             <h2>Mes Articles</h2>
             <div class="articles-list">
                 <article>
-                    <h3>La décarbonation de l’audiovisuelle ; l’écran de fumée écologique</h3>
-                    <p>Une analyse des impacts environnementaux de l'industrie audiovisuelle, au-delà du simple bilan carbone.</p>
+                    <h3>La décarbonation de l’audiovisuel ; l’écran de fumée écologique</h3>
+                    <p>Une analyse des impacts environnementaux de l'industrie audiovisuelle...</p>
                     <a href="Thibault.pdf" class="btn">Lire la suite</a>
                 </article>
                 <article>
                     <h3>Titre de l'Article 2</h3>
                     <p>Une exploration en profondeur de [Sujet de l'Article 2]...</p>
                     <a href="#" class="btn">Lire la suite</a>
+                </article>
+                <article>
+                    <h3>Titre de l'Article 3</h3>
+                    <p>Une exploration en profondeur de [Sujet de l'Article 2]...</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </article>
+                <!-- Ajoutez plus d'articles ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Nouvelle section : Les articles qui m'ont inspirés -->
+    <section id="inspired">
+        <div class="container">
+            <h2>Les articles qui m'ont inspirés</h2>
+            <div class="inspired-list">
+                <article>
+                    <h3>Titre de l'Article Inspirant 1</h3>
+                    <p>Brève description de l'article inspirant 1...</p>
+                </article>
+                <article>
+                    <h3>Titre de l'Article Inspirant 2</h3>
+                    <p>Brève description de l'article inspirant 2...</p>
                 </article>
                 <!-- Ajoutez plus d'articles ici -->
             </div>
@@ -52,7 +76,7 @@
         <div class="container">
             <h2>À propos de moi</h2>
             <p> Je suis Thibault Marchetti, étudiant en science politique, passionné par les complexités du monde moderne où se croisent la rigueur analytique et l'imaginaire foisonnant. 
-                Mon domaine d'étude, la science politique, se mêle aux mondes fascinants du cinéma, créant ainsi une toile où les récits cinématographiques se rencontrent et se confrontent aux dynamiques politiques contemporaines. J'écris sur le cinéma non seulement comme une forme d'art mais aussi comme un miroir des aspirations, des conflits et des rêves humains.
+                Mon domaine d'étude, la science politique, se mêle souvent aux mondes fascinants du cinéma, créant ainsi une toile où les récits cinématographiques se rencontrent et se confrontent aux dynamiques politiques contemporaines. J'écris sur le cinéma non seulement comme une forme d'art mais aussi comme un miroir des aspirations, des conflits et des rêves humains.
             Je suis animé par la conviction que le cinéma et la science politique sont les deux faces d'une même pièce : l’un illumine les désirs et les peurs de notre époque, tandis que l’autre décortique les structures et les mouvements qui façonnent notre société. Dans cet entrelacs d'images et de théories, je m’efforce de donner vie à une perspective nouvelle, où chaque article devient une analyse aussi captivante que le meilleur des thrillers.</p>
             <a href="CV.pdf" class="btn">Télécharger mon CV</a>
         </div>
@@ -61,19 +85,22 @@
     <section id="contact">
         <div class="container">
             <h2>Contactez-moi</h2>
-            <form>
+            <form action="https://formspree.io/f/xdknyvoa" method="POST">
                 <label for="name">Nom:</label>
                 <input type="text" id="name" name="name" required>
-
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-
                 <button type="submit">Envoyer</button>
+
+                <div class="linkedin-button-container">
+    <a href="https://www.linkedin.com/in/thibault-marchetti-628887259/" target="_blank" class="btn-linkedin">Mon Profil LinkedIn</a>
+</div>
+
             </form>
         </div>
+        
     </section>
 
     <footer>
@@ -85,3 +112,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
