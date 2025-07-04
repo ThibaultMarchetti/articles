@@ -237,3 +237,39 @@ section.show, .articles-list article.show {
 .btn-linkedin:hover {
     background-color: #005582; /* Couleur plus foncée au survol */
 }
+#home-image {
+    padding: 0; /* Retire les marges pour que l'image occupe toute la largeur */
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto; /* Ajuste la hauteur automatiquement en fonction de la largeur */
+    display: block; /* Retire les espaces blancs sous l'image */
+    margin: 0 auto;
+    filter: brightness(0.9); /* Ajuste la luminosité pour une meilleure intégration visuelle */
+    transition: filter 0.3s ease; /* Ajoute une transition douce pour le changement de filtre */
+}
+
+.full-width-image:hover {
+    filter: brightness(1); /* Réinitialise la luminosité au survol */
+}
+#home-image {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#home-image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.full-width-image {
+    width: 82%;
+    height: 800px;
+    max-height: 800px; /* Limite la hauteur de l'image */
+    display: block;
+    margin: 0 auto;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+

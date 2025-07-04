@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Animation d'apparition progressive au défilement
-    const elements = document.querySelectorAll('section, .articles-list article');
+    const elements = document.querySelectorAll('section, .articles-list article, #home-image img');
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
